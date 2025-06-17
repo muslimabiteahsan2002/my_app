@@ -7,12 +7,74 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/rectangleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="Rectangle"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lengthEt"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:hint="enter the length"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangleTv" />
+
+    <EditText
+        android:id="@+id/weightEt"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:hint="enter the weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lengthEt" />
+
+    <Button
+        android:id="@+id/areaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="area of rectangle"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintTop_toBottomOf="@id/weightEt" />
+
+    <TextView
+        android:id="@+id/areaTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Show of the rectangle area"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintTop_toBottomOf="@id/areaBtn" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:id="@+id/lengthTv"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintTop_toTopOf="@id/lengthEt"
+        app:layout_constraintStart_toEndOf="@id/lengthEt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:id="@+id/weightTv"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintTop_toTopOf="@id/weightEt"
+        app:layout_constraintStart_toEndOf="@id/weightEt"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
